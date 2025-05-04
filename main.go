@@ -151,10 +151,9 @@ func fetchThreadReplies(token, channel, threadTs string) ([]Message, error) {
 			break
 		}
 		cursor = res.ResponseMetadata.NextCursor
-
-		time.Sleep(time.Duration(1) * time.Second)
 	}
 
+	time.Sleep(time.Duration(1) * time.Second)
 	return replies, nil
 }
 
