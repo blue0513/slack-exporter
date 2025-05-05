@@ -1,4 +1,4 @@
-# slack-extracter
+# slack-extractor
 
 A Go CLI tool to extract threads and replies from a Slack channel.
 
